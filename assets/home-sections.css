@@ -1,0 +1,130 @@
+.tb-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+
+.tb-grid {
+  display: grid;
+}
+
+.tb-grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.tb-featuredCats {
+  background: var(--tb-bgLight) url(../img/bg-healty.png) no-repeat;
+  background-size: cover;
+  background-position: center 180px;
+  background-size: 100%;
+  padding: 0 0 4rem;
+}
+@media screen and (min-width: 768px) {
+  .tb-featuredCats {
+    background-position: center;
+  }
+}
+.tb-featuredCats .tb-circle-logo {
+  display: block;
+  width: 120px;
+  position: relative;
+  top: -60px;
+  margin: 0 auto -60px;
+}
+@media only screen and (min-width: 768px) {
+  .tb-featuredCats .tb-circle-logo {
+    width: 186px;
+    top: -90px;
+    margin: 0 auto -60px;
+  }
+}
+.tb-featuredCats h2, .tb-featuredCats h3 {
+  text-align: center;
+  color: var(--tb-textColor);
+  font-family: "Visby CF", Helvetica, sans-serif;
+}
+.tb-featuredCats h2 {
+  font-size: 57px;
+  margin: 0 0 4rem;
+  font-weight: normal;
+}
+.tb-featuredCats h3 {
+  font-size: 57px;
+  margin: 0 0 1rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+.tb-featuredCats .tb-grid {
+  grid-gap: 1.6rem;
+}
+
+.tb-feat-cat {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+  padding: 1.8rem 1rem 2.4rem 2rem;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all ease 0.6s;
+}
+.tb-feat-cat.arepas {
+  background-color: #E55776;
+  background-image: url(../img/feat-cat-arepas.png);
+}
+.tb-feat-cat.chicken {
+  background-color: #FA9522;
+  background-image: url(../img/feat-cat-chicken.png);
+}
+.tb-feat-cat.soups {
+  background-color: var(--tb-primary);
+  background-image: url(../img/feat-cat-soups.png);
+}
+.tb-feat-cat:hover {
+  filter: hue-rotate(-8deg);
+  background-position: calc(100% + 16px);
+}
+.tb-feat-cat:hover .tb-title {
+  transform: translateY(-6px);
+}
+.tb-feat-cat:hover .tb-cta:after {
+  margin-left: 24px;
+}
+.tb-feat-cat .tb-title {
+  font-family: "Visby CF", Helvetica, sans-serif;
+  color: white;
+  font-weight: normal;
+  font-size: 30px;
+  margin: 0 0 0.6rem;
+  text-decoration: none;
+  line-height: 1.2;
+  transition: all ease 0.3s;
+}
+.tb-feat-cat .tb-cta {
+  color: white;
+  font-family: "Visby CF", Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all ease 0.3s;
+}
+.tb-feat-cat .tb-cta:after {
+  content: "";
+  width: 9px;
+  height: 9px;
+  margin-left: 16px;
+  display: block;
+  transform: rotate(45deg);
+  border: 1px solid white;
+  border-left: none;
+  border-bottom: none;
+  transition: all ease 0.3s;
+}
+
+.tb-videoCover {
+  background-color: #343b3f;
+  height: 200px;
+}

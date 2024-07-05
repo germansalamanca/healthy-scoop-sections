@@ -1,0 +1,130 @@
+@use "variables" as *;
+
+.tb-container{
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1rem;
+}
+
+.tb-pos-r{
+	position: relative;
+}
+
+.tb-grid{
+	display: grid;
+}
+.tb-grid-3{
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));;
+}
+
+.tb-grid-4{
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));;
+}
+
+.tb-decorative{
+	position: absolute;
+	pointer-events: none;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: $transition-slow;
+}
+img{
+	max-width: 100%;
+}
+
+// Titles
+.tb-section-title{
+	font-family: $font-family;
+	font-size: 50px;
+	line-height: 1.2;
+	font-weight: bold;
+	text-align: center;
+	color: #292929;
+	margin: 0 0 1.8rem;
+}
+.tb-sectionSubtitle{
+	font-family: $font-family;
+	font-size: 38x;
+	font-weight: normal;
+	text-align: center;
+	color: #292929;
+	margin: 0 0 1.8rem;
+	@media only screen and (min-width: $lg){
+		font-size: 54px;
+	}
+}
+.tb-title{
+	font-family: $font-family;
+}
+.tb-excerpt{
+	color: #494949;
+	font-weight: normal;
+	font-family: $font-family;
+	font-size: 1rem;
+	line-height: 1.46;
+}
+
+.tb-sectionsGroup{
+	overflow: hidden;
+}
+
+// Buttons 
+.tb-btn{
+	background-color: $primary;
+	color: white;
+	text-decoration: none;
+	font-family: $font-family;
+	font-size: 1.1rem;
+	font-weight: bold;
+	padding: 1.1rem 1rem;
+	text-align: center;
+	min-width: 10rem;
+	display: inline-block;
+	border-radius: 100rem;
+	transition: $transition-med;
+	&:hover{
+		transform: scale(1.06);
+		background-color: $green-dark;
+	}
+	&-yellow{
+		background-color: $yellow-orange;
+		color: #293820;
+		&:hover{
+			background-color: $orange;
+		}
+	}
+}
+
+// Animations 
+
+@keyframes tbGrow{
+	from{
+		opacity: 0;
+		transform: scale(0);
+	}
+	to{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@keyframes tbFromTop{
+	from{
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes tbFromBottom{
+	from{
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

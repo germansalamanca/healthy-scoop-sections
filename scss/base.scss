@@ -1,0 +1,14 @@
+@use "variables" as *;
+
+:root{
+  --tb-primary: #{$green};
+  --tb-bgLight: #{$hueso};
+  --tb-textColor: #{$text-dark};
+}
+
+html{
+	font-family: "Helvetica";
+}
+body{
+	margin: 0;
+}

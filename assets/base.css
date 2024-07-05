@@ -1,0 +1,13 @@
+:root {
+  --tb-primary: #6DA63B;
+  --tb-bgLight: #F7F6F1;
+  --tb-textColor: #293820;
+}
+
+html {
+  font-family: "Helvetica";
+}
+
+body {
+  margin: 0;
+}
