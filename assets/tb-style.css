@@ -60,6 +60,47 @@ img {
   font-family: "Visby CF", Helvetica, sans-serif;
 }
 
+.tb-preTitle {
+  position: relative;
+  font-size: 0.8rem;
+  color: var(--tb-primary);
+  font-weight: medium;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 auto 1rem;
+  animation-delay: 0.5s;
+}
+.tb-preTitle span {
+  position: relative;
+  width: 5px;
+  height: 5px;
+  border: 1px solid var(--tb-primary);
+  align-items: center;
+  border-radius: 50%;
+  display: flex;
+}
+.tb-preTitle span:first-child {
+  right: 2rem;
+}
+.tb-preTitle span:last-child {
+  left: 2rem;
+}
+.tb-preTitle span:before, .tb-preTitle span:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 5px;
+  border: 1px solid var(--tb-primary);
+  border-radius: 50%;
+}
+.tb-preTitle span:before {
+  left: 0.5rem;
+}
+.tb-preTitle span:after {
+  right: 0.5rem;
+}
+
 .tb-excerpt {
   color: #494949;
   font-weight: normal;
@@ -478,46 +519,6 @@ section.tb-recipes {
 section.tb-recipes .tb-container {
   position: relative;
 }
-section.tb-recipes .tb-preTitle {
-  position: relative;
-  font-size: 0.8rem;
-  color: var(--tb-primary);
-  font-weight: medium;
-  display: inline-flex;
-  align-items: center;
-  margin: 0 auto 1rem;
-  animation-delay: 0.5s;
-}
-section.tb-recipes .tb-preTitle span {
-  position: relative;
-  width: 5px;
-  height: 5px;
-  border: 1px solid var(--tb-primary);
-  align-items: center;
-  border-radius: 50%;
-  display: flex;
-}
-section.tb-recipes .tb-preTitle span:first-child {
-  right: 2rem;
-}
-section.tb-recipes .tb-preTitle span:last-child {
-  left: 2rem;
-}
-section.tb-recipes .tb-preTitle span:before, section.tb-recipes .tb-preTitle span:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 5px;
-  height: 5px;
-  border: 1px solid var(--tb-primary);
-  border-radius: 50%;
-}
-section.tb-recipes .tb-preTitle span:before {
-  left: 0.5rem;
-}
-section.tb-recipes .tb-preTitle span:after {
-  right: 0.5rem;
-}
 section.tb-recipes .tb-section-title {
   margin-bottom: 0.2rem;
   animation-delay: 0.2s;
@@ -781,4 +782,196 @@ section.tb-ourHistory .tb-decorative.left {
     top: 32%;
     left: -28%;
   }
+}
+
+section.tb-faq {
+  overflow: hidden;
+  padding: 5rem 0 4rem;
+}
+section.tb-faq .tb-container-title {
+  z-index: 4;
+}
+section.tb-faq .tb-section-title {
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  section.tb-faq .tb-cols {
+    display: flex;
+    gap: 2.2rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  section.tb-faq .tb-col {
+    width: 50%;
+  }
+}
+section.tb-faq .tb-col-left .tb-accordion:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+@media only screen and (min-width: 768px) {
+  section.tb-faq .tb-col-left .tb-accordion:last-child {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  section.tb-faq .tb-col-right .tb-accordion:first-child {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+section.tb-faq .tb-col-right .tb-accordion:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+section.tb-faq .tb-decorative.left {
+  width: 180px;
+  height: 180px;
+  top: -30%;
+  left: -14%;
+  background-image: url(tb-deco-faq-left.png);
+  animation-delay: 0.4s;
+}
+@media only screen and (min-width: 576px) {
+  section.tb-faq .tb-decorative.left {
+    top: -30%;
+    left: -8%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  section.tb-faq .tb-decorative.left {
+    width: 250px;
+    height: 250px;
+    top: -50%;
+    left: -10%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  section.tb-faq .tb-decorative.left {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  section.tb-faq .tb-decorative.left {
+    left: -20%;
+    width: 400px;
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  section.tb-faq .tb-decorative.left {
+    top: 0%;
+    left: -26%;
+  }
+}
+section.tb-faq .tb-decorative.right {
+  width: 180px;
+  height: 180px;
+  top: -33%;
+  right: -14%;
+  background-image: url(tb-deco-faq-right-2.png);
+  animation-delay: 0.6s;
+}
+@media only screen and (min-width: 576px) {
+  section.tb-faq .tb-decorative.right {
+    top: -36%;
+    right: -10%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  section.tb-faq .tb-decorative.right {
+    width: 250px;
+    height: 250px;
+    top: -60%;
+    right: -8%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  section.tb-faq .tb-decorative.right {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  section.tb-faq .tb-decorative.right {
+    right: -20%;
+    width: 400px;
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  section.tb-faq .tb-decorative.right {
+    top: -36%;
+    right: -30%;
+  }
+}
+
+.tb-accordion {
+  background-color: white;
+  border: 1px solid #d9d9d9;
+  margin: 0.46rem 0;
+  width: 100%;
+}
+.tb-accordion header {
+  cursor: pointer;
+  display: flex;
+  padding: 1rem 1.2rem;
+  align-items: center;
+  color: #252525;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Visby CF", Helvetica, sans-serif;
+  line-height: 1.1;
+  transition: all ease 0.45s;
+}
+.tb-accordion header:hover {
+  background-color: #f1f3f5;
+}
+.tb-accordion header:focus {
+  background-color: red;
+}
+.tb-accordion header:before {
+  content: "";
+  width: 0.3rem;
+  height: 0.3rem;
+  border: 2px solid #252525;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  transform: rotate(45deg);
+  margin-right: 1.6rem;
+  transition: all ease 0.6s;
+}
+.tb-accordion .tb-content {
+  padding: 0 3.4rem 0;
+  opacity: 1;
+  max-height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: all 0.4s ease-out;
+}
+.tb-accordion .tb-content p {
+  color: #494949;
+  font-weight: normal;
+  font-family: "Visby CF", Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+}
+.tb-accordion.active header {
+  color: var(--tb-primary);
+}
+.tb-accordion.active header:before {
+  border-top-color: transparent;
+  border-bottom-color: var(--tb-primary);
+  border-right-color: var(--tb-primary);
+}
+.tb-accordion.active .tb-content {
+  padding: 0.4rem 3.4rem 1rem;
+  visibility: visible;
+  opacity: 1;
+}
+.tb-accordion.active .tb-content p {
+  margin: 0 0 0.8rem;
 }

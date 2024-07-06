@@ -9,50 +9,6 @@ section.tb-recipes{
 		position: relative;
 	}
 
-	.tb-preTitle{
-		position: relative;
-		font-size: .8rem;
-		color: $primary;
-		font-weight: medium;
-		display: inline-flex;
-		align-items: center;
-		margin: 0 auto 1rem;
-		animation-delay: .5s;
-		span{
-			position: relative;
-			width: 5px;
-			height: 5px;
-			border: 1px solid $primary;
-			align-items: center;
-			border-radius: 50%;
-			display: flex;
-			&:first-child{
-				right: 2rem;
-			}
-			&:last-child{
-				left: 2rem;
-			}
-			
-			&:before, &:after{
-				content: '';
-				position: absolute;
-				display: block;
-				width: 5px;
-				height: 5px;
-				border: 1px solid $primary;
-				border-radius: 50%;
-			}
-			&:before{
-				left: .5rem;
-			}
-			&:after{
-				right: .5rem;
-			}
-		}
-
-
-	}
-
 	.tb-section-title{
 		margin-bottom: .2rem;
 		animation-delay: .2s;
