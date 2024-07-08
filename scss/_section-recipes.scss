@@ -9,51 +9,13 @@ section.tb-recipes{
 		position: relative;
 	}
 
-	.tb-preTitle{
-		position: relative;
-		font-size: .8rem;
-		color: $primary;
-		font-weight: medium;
-		display: inline-flex;
-		align-items: center;
-		margin: 0 auto 1rem;
-		span{
-			position: relative;
-			width: 5px;
-			height: 5px;
-			border: 1px solid $primary;
-			align-items: center;
-			border-radius: 50%;
-			display: flex;
-			&:first-child{
-				right: 2rem;
-			}
-			&:last-child{
-				left: 2rem;
-			}
-			
-			&:before, &:after{
-				content: '';
-				position: absolute;
-				display: block;
-				width: 5px;
-				height: 5px;
-				border: 1px solid $primary;
-				border-radius: 50%;
-			}
-			&:before{
-				left: .5rem;
-			}
-			&:after{
-				right: .5rem;
-			}
-		}
-
-
+	.tb-section-title{
+		margin-bottom: .2rem;
+		animation-delay: .2s;
 	}
 
-	.tb-section-title{
-		margin-bottom: .6rem;
+	.tb-sectionSubtitle{
+		animation-delay: .4s;
 	}
 
 	.tb-grid{
@@ -73,7 +35,7 @@ section.tb-recipes{
 			top: -19%;
 			left: -26%;
 			background-image: url(#{$img-url}tb-deco-recipes-left.png);
-			animation: tbFromTop ease-in-out 1s;
+			animation-delay: .4s;
 			
 			@media only screen and (min-width: $lg){
 				width: 450px;
@@ -95,7 +57,7 @@ section.tb-recipes{
 			top: -2%;
 			right: -20%;
 			background-image: url(#{$img-url}tb-deco-recipes-right.png);
-			animation: tbFromTop ease-in-out 1s;
+			animation-delay: .6s;
 			@media only screen and (min-width: $lg){
 				width: 350px;
 				height: 350px;
@@ -115,6 +77,7 @@ section.tb-recipes{
 .tb-articleRecipe{
 	max-width: 280px;
 	margin: 0 auto;
+	animation-delay: .3s;
 	img{
 		width: 100%;
 		max-width: 200px;
